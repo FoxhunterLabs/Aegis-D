@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from typing import Dict, Any
-from datetime import datetime
 from ..risk import RiskLevel
 
 
@@ -16,5 +15,6 @@ class RiskAssessment:
     ttc_s: float
     explanation: Dict[str, Any]
     parameters: Dict[str, Any]
+    constitution: Dict[str, Any]
     input_hash: str
     timestamp_utc: str
